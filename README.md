@@ -1,6 +1,7 @@
 # Command Proxy Wrapper
 
 一个用于为任意命令设置代理的轻量级工具，专门解决 ClaudeCode 等工具的网络代理问题。
+![image](https://github.com/user-attachments/assets/138a763b-ad46-45b6-851f-fc3a078478f5)
 
 ## 项目目标
 
