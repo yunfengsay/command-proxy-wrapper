@@ -1,13 +1,21 @@
 # Command Proxy Wrapper
 
-一个用于为任意命令设置代理的轻量级工具，专门解决 ClaudeCode 等工具的网络代理问题。
+一个用于为任意命令设置代理的轻量级工具，专门解决 ClaudeCode 和 GeminiCode 等工具的网络代理问题。
 ![image](https://github.com/user-attachments/assets/138a763b-ad46-45b6-851f-fc3a078478f5)
 
 ## 项目目标
 
-解决 ClaudeCode 及其他命令行工具在受限网络环境下的连接问题，通过自动设置代理环境变量和 Node.js 程序的特殊处理，确保命令能够通过代理正常访问网络。
+解决 ClaudeCode、GeminiCode 及其他命令行工具在受限网络环境下的连接问题，通过自动设置代理环境变量和 Node.js 程序的特殊处理，确保命令能够通过代理正常访问网络。
 
-## 构建
+## 安装
+
+### 远程安装（推荐）
+
+```bash
+go install github.com/yunfengsay/command-proxy-wrapper@latest
+```
+
+### 本地构建
 
 ```bash
 go build -o proxywrap proxywrap.go
@@ -24,8 +32,11 @@ go build -o proxywrap proxywrap.go
 ### 示例
 
 ```bash
-# 使用代理运行 Claude CLI
-./proxywrap claude chat
+# 使用代理运行 ClaudeCode 
+./proxywrap claude
+
+# 使用代理运行 Gemini  
+./proxywrap gemini
 
 # 使用代理运行其他命令
 ./proxywrap curl https://api.anthropic.com
