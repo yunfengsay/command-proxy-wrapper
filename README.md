@@ -12,7 +12,9 @@
 ### 远程安装（推荐）
 
 ```bash
-go install github.com/yunfengsay/command-proxy-wrapper@latest && cd $(go env GOPATH)/bin && ln -sf command-proxy-wrapper proxywrapper
+go install github.com/yunfengsay/command-proxy-wrapper@latest && cd $(go env GOPATH)/bin && ln -sf command-proxy-wrapper proxywrap
+# 运行
+proxywrap claude
 ```
 
 ### 本地构建
